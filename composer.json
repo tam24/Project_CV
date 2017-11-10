@@ -1,0 +1,15 @@
+{
+    "name": "etudiant/project_cv",
+    "description": "cv",
+    "type": "project",
+    "authors": [
+        {
+            "name": "tam24",
+            "email": "tam.escalante@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^6.0"
+    }
+}

@@ -1,0 +1,17 @@
+body {
+  background: #000;
+  margin: 0;
+  color: #43c728;
+  font-weight: lighter;
+}
+
+a.nav-link {
+  color: #cefbe4;
+  font-size: 1.5rem;
+}
+
+footer .nav-footer{
+  color: #81ec72;
+}
+
+/*Colors = ['#cefbe4', '#81ec72', '#5cd646', '#54d13c', '#4ccc32', '#43c728'];*/
