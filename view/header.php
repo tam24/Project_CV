@@ -21,26 +21,26 @@
     <ul class="nav flex-column nav nav-pills">
       <li class="nav-item">
         <?php if ($currentPage == 'binary'):?>
-         <a class="nav-link" href="home2.php">01001000 01001111 01001101 01000101
-        <?php else : ?> HOME </a>
+         <a class="nav-link" href="home1.php">01001000 01001111 01001101 01000101 </a>
+       <?php else : ?><a class="nav-link" href="home2.php"> HOME </a>
         <?php endif; ?>
       </li>
       <li class="nav-item">
         <?php if ($currentPage == 'binary'):?>
           <a class="nav-link" href="git.php">01000111 01001001 01010100 </a>
-        <?php else : ?> GIT </a>
+        <?php else : ?><a class="nav-link" href="git.php"> GIT </a>
         <?php endif; ?>
       </li>
       <li class="nav-item">
         <?php if ($currentPage == 'binary'):?>
           <a class="nav-link" href="projects.php">01010000 01010010 01001111 01001010 01000101 01000011 01010100 01010011</a>
-        <?php else : ?> PROJECTS </a>
+        <?php else : ?><a class="nav-link" href="projects.php"> PROJECTS </a>
         <?php endif; ?>
       </li>
       <li class="nav-item">
         <?php if ($currentPage == 'binary'):?>
          <a class="nav-link" href="contact.php">01000011 01001111 01001110 01010100 01000001 01000011 01010100 </a>
-        <?php else : ?> CONTACT </a>
+       <?php else : ?><a class="nav-link" href="contact.php"> CONTACT </a>
         <?php endif; ?>
       </li>
     </ul>

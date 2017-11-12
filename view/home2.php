@@ -1,7 +1,7 @@
 <div>
-<img class="textimg" src="../img/calaverita.jpg" alt="photo tam">
+<img class="textimg" src="./img/calaverita.jpg" alt="photo tam">
 <h4 class="texth4">Tamara ESCALANTE</h4>
-<h5 class="texth5">Cibernetics and Computer Systems Engineer</h3>
+<h5 class="texth5">Cybernetics and Computer Systems Engineer</h3>
 <p class="textp"> 37aa Rue des Romains </p>
 <p class="textp">Niederdonven, L-5433, Luxembourg </p>
 <p class="textp">escalante_tam@yahoo.co.uk </p>
