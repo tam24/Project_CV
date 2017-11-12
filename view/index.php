@@ -17,8 +17,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 
-  <script src="js/script.js" charset="utf-8"></script>
-  <div class="btn-group" role="group" aria-label="Basic example">
-    <a href="home1.php" class="btn btn-primary">E N T </a>
-    <a href="home1.php" class="btn btn-danger">E R </a>
+  <script src="js\script.js" charset="utf-8"></script>
+
+  <div class="btn-group" role="group">
+    <a href="home1.php"> <button class="btn btn-primary" onclick="stopdraw()">E N T</button></a>
+    <a href="home1.php"> <button class="btn btn-danger" onclick="stopdraw()">E R</button></a>
+
   </div>

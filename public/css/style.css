@@ -1,17 +1,35 @@
-body {
+body, p {
   background: #000;
   margin: 0;
-  color: #43c728;
+  color: #54d13c;
   font-weight: lighter;
+  font-size: 1.5rem;
+}
+
+div.texto {
+  color: #81ec72;
+  text-align: center;
+}
+
+img {
+  height: 10rem;
+  width: 20rem;
+}
+
+div.card w-75 {
+  size: 50rem;
+  background: #000;
+  color: #5cd646;
 }
 
 a.nav-link {
   color: #cefbe4;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
-footer .nav-footer{
-  color: #81ec72;
+footer .nav-footer {
+  color: #43c728;
+  font-size: .75rem;
 }
 
 /*Colors = ['#cefbe4', '#81ec72', '#5cd646', '#54d13c', '#4ccc32', '#43c728'];*/

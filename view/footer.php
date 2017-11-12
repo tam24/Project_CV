@@ -1,11 +1,9 @@
 </body>
 <footer>
-  <!-- insert decimal to binary conversion
+
   <?php if ($currentPage == 'binary'):?>
-    <?php $year = date('Y'); ?>
-    <?php $binary = year/2;?>
-    <?php $bin_length = strlen($binary);?>
-  -->
+  <?php echo decbin(date('Y')).'<span><strong>© | 01000001 01101100 01101100 00100000 01110010 01101001 01100111 01101000 01110100 01110011 00100000 01110010 01100101 01110011 01100101 01110010 01110110 01100101 01100100 ☺ 01010100 01100001 01101101 </span></strong>';?><br></br>
+
   <?php else : ?> <?php echo date('Y').'<span><strong>© | All rights reserved ☺ Tam </span></strong>';
   ?><br></br>
   <?php endif; ?>
