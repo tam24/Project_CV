@@ -5,14 +5,14 @@ use PHPMailer\PHPMailer\Exception;
 //Load composer's autoloader
 require '../vendor/autoload.php';
 //(user email,subject, htmlcontent link do reset pswd, )
-function sendEmail ($to, $subject, $htmlContent, $textContent=''){
+function sendEmail ($subject, $htmlContent){
   global $config;
   $mail = new PHPMailer(true);     // Passing `true` enables exceptions
 
 
   try {
       //Server settings
-      $mail->SMTPDebug = 6;                                 // Enable verbose debug output
+    //enable just to check if it works  $mail->SMTPDebug = 6;                                 // Enable verbose debug output
       $mail->isSMTP();                                      // Set mailer to use SMTP
       $mail->Host = $config['MAIL_HOST'];  // Specify main and backup SMTP servers
       $mail->SMTPAuth = true;                               // Enable SMTP authentication
@@ -23,27 +23,29 @@ function sendEmail ($to, $subject, $htmlContent, $textContent=''){
 
       //Recipients
       $mail->setFrom('tam_escalante@hotmail.com', 'Tam hotmail');
-      $mail->addAddress('escalante_tam@yahoo.co.uk', 'tam yahoo');     // Add a recipient
-      /*$mail->addReplyTo('info@example.com', 'Information');
-      $mail->addCC('cc@example.com');
-      $mail->addBCC('bcc@example.com');
+      // Add a recipient
+      $mail->addAddress('escalante_tam@yahoo.co.uk', 'tam yahoo');
 
-      //Attachments
-      $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-      $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-  */
       //Content
-      $mail->isHTML(true);                                  // Set email format to HTML
-      $mail->Subject = $subject;        //'Here is the subject';
-      $mail->Body    = '<b>'.$htmlContent.'</b>';       //'This is the HTML message body <b>in bold!</b>';
-      //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+      // Set email format to HTML
+      $mail->isHTML(true);
+      //'Here is the subject';
+      $mail->Subject = $subject;
+      //'This is the HTML message body <b>in bold!</b>';
+      $mail->Body    = '<b>'.$htmlContent.'</b>';
 
       $mail->send();
-      echo 'Message has been sent';
-  } catch (Exception $e) {
+      //echo 'Message has been sent'; to check that it was sent
+      //send true if message sent
+      $emailSent = true;
+    } catch (Exception $e) {
+      /* to check if email was not sent:
       echo 'Message could not be sent.';
       echo 'Mailer Error: ' . $mail->ErrorInfo;
-  }
+      */
+      $emailSent = false;
+      $emailError = $mail->ErrorInfo;
+      }
 }//closes function sendEmail
 
 ?>

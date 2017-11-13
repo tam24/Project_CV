@@ -21,7 +21,7 @@
     <ul class="nav flex-column nav nav-pills">
       <li class="nav-item">
         <?php if ($currentPage == 'binary'):?>
-         <a class="nav-link" href="home1.php">01001000 01001111 01001101 01000101 </a>
+         <a class="nav-link" href="home2.php">01001000 01001111 01001101 01000101 </a>
        <?php else : ?><a class="nav-link" href="home2.php"> HOME </a>
         <?php endif; ?>
       </li>

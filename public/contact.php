@@ -9,7 +9,7 @@ $lastName = '';
 $firstName = '';
 $email = '';
 $text = '';
-$formOk = true;
+
 
 //data retrieval from POST
 if (!empty($_POST)) {
@@ -25,6 +25,7 @@ if (!empty($_POST)) {
     $text = trim(strip_tags($text));
 
     //data validation before submitting
+    $formOk = true;
     if (empty($lastName)) {
         echo 'Please enter your Last Name';
         $formOk = false;
@@ -53,9 +54,13 @@ if (!empty($_POST)) {
         $formOk = false;
     }
     //Once everything is OK then the data can be pushed into DB
-    if ($formOK) {
-        echo 'Everything is OK send email!';
+    if ($formOk) {
+        echo 'Everything is OK email sent!';
         //send email
+       //sum of contents to send email;
+       $dataToEmail = 'From: '.$firstName.' '.$lastName.'<br>email: '.$email.'<br>--------------------<br>'.$text;
+       $subject = $firstName.' sent you a message';
+       sendEmail($subject, $dataToEmail);
     }
 }//closes if (!empty($_POST)
 
