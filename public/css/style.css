@@ -4,11 +4,11 @@ body, p {
   color: #54d13c;
   font-weight: lighter;
   font-size: 1.5rem;
+
 }
 
-div.texto {
-  color: #81ec72;
-  text-align: center;
+div.hideText{
+  display: none;
 }
 
 img {

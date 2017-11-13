@@ -64,7 +64,12 @@ if (!empty($_POST)) {
     }
 }//closes if (!empty($_POST)
 
-
+/*When your users submit the form where you integrated reCAPTCHA, you'll get as part of the payload a string with the name "g-recaptcha-response". In order to check whether Google has verified that user, send a POST request with these parameters:
+URL: https://www.google.com/recaptcha/api/siteverify
+secret key (required)
+response (required) : The value of 'g-recaptcha-response'.
+remoteip : The end user's ip address.
+*/
 
 // At the end, display the "views"
 require_once __DIR__.'/../view/header.php';

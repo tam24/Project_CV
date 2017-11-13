@@ -1,3 +1,4 @@
+
 <div class="container">
 <br>
   <div class="panel panel-primary" style="max-width:400px;margin:auto;">
@@ -30,8 +31,13 @@
 
       <div class="btn-group" role="group">
     	 <button type="submit" class="btn btn-primary">S U B </button>
-    	 <button type="submit" class="btn btn-danger">M I T</button>
-     </div>
+    	 <button type="submit" class="btn btn-danger">M I T</button>       
+      </div>
+
+      <div class="g-recaptcha" data-sitekey="6LemiDgUAAAAAKTJqhImUWQUZdLMKD0sjdHdBcVv">
+
+      </div>
+
     </form>
   </div>
   </div>

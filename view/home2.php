@@ -1,4 +1,9 @@
 <div>
+  <div class="btn-group" role="group">
+    <button class="btn btn-primary" onclick="displayAll()">E N T</button>
+    <button class="btn btn-danger" onclick="displayAll()">E R</button>
+  </div>
+
   <div class="textHomeTitle">
     <img class="textimg" src="./img/calaverita.jpg" alt="photo tam">
     <h4>Tamara ESCALANTE</h4>

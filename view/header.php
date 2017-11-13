@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
   <link rel="stylesheet" href="css\style.css" media="screen" title="no title" charset="utf-8">
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
