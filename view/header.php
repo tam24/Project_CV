@@ -7,19 +7,27 @@
 
   <!-- CDN : PROD -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="css\style.css" media="screen" title="no title" charset="utf-8">
+
   <script src='https://www.google.com/recaptcha/api.js'></script>
+
 </head>
 
-<body>
+<!-- take the value of the currentPage -->
+<body class="<?= $currentPage?>">
   <!-- CDN : script -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 
-  <nav class="navbar justify-content-between">
-    <ul class="nav flex-column nav nav-pills">
+
+  <nav class="navbar">
+    <ul class="nav justify-content-center">
       <li class="nav-item">
         <?php if ($currentPage == 'binary'):?>
          <a class="nav-link" href="home2.php">01001000 01001111 01001101 01000101 </a>

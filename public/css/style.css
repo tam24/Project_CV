@@ -1,25 +1,67 @@
+/*All pages */
 body, p {
   background: #000;
   margin: 0;
   color: #54d13c;
   font-weight: lighter;
-  font-size: 1.5rem;
-
+  font-size: 1.25rem;
 }
 
+/*On home1 */
 div.hideText{
   display: none;
 }
-
-img {
-  height: 10rem;
-  width: 20rem;
+/* to display the contents of the home1 ($currentPage=binary)  */
+.binary nav {
+  display: none;
 }
 
-div.card w-75 {
-  size: 50rem;
-  background: #000;
+div.binaryCard{
+  width: 40rem;
   color: #5cd646;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: #000;
+}
+/*On home1 and home2 */
+.textimg {
+  height: 10rem;
+  width: 10rem;
+
+}
+
+/*On home2*/
+div.card {
+  width: 40rem;
+  color: #5cd646;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: #000;
+}
+
+div.card h4{
+  color: #81ec72;
+  margin-top: 1rem;
+}
+
+div.card h5{
+  color: #54d13c;
+  margin-top: 1rem;
+}
+
+div.card h6{
+  color: #43c728';
+  margin-top: 1rem;
+}
+/*on contact */
+div.g-recaptcha{
+  margin-top: 2rem;
+}
+/*on header & footer*/
+div.copyright{
+  margin-top: 1rem;
 }
 
 a.nav-link {
@@ -29,7 +71,10 @@ a.nav-link {
 
 footer .nav-footer {
   color: #43c728;
-  font-size: .75rem;
+  font-size: 1rem;
+
 }
+
+
 
 /*Colors = ['#cefbe4', '#81ec72', '#5cd646', '#54d13c', '#4ccc32', '#43c728'];*/

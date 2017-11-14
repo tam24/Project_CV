@@ -1,5 +1,19 @@
+<script src="lib\jquery-ui-1.12.1" charset="utf-8"></script>
+<script>
+$(document).ready(function(){
+  $("#btnDisplayTxt").on("click",function(){
+    $("#btnDisplayTxt").hide();
+    $("#btnDisplayTxt2").hide();
+    $(".navbar").toggle();
+    $("#textHomeBinName").toggle();
+    $("#textHomeBinTitle").toggle();
+    $("#textHomeBinAddress").toggle();
 
-<div>
+  });
+});
+</script>
+<div class="binaryCard">
+
   <div class="btn-group" role="group">
     <button id="btnDisplayTxt" class="btn btn-primary" >E N T</button>
     <button id="btnDisplayTxt2" class="btn btn-danger" >E R</button>
@@ -18,13 +32,3 @@
     <p>01000001 01100100 01100100 01110010 01100101 01110011 01110011 00111010 00100000 00110011 00110111 01100001 01100001 00100000 01010010 01110101 01100101 00100000 01100100 01100101 01110011 00100000 01010010 01101111 01101101 01100001 01101001 01101110 01110011 00101100 00100000 01001110 01101001 01100101 01100100 01100101 01110010 01100100 01101111 01101110 01110110 01100101 01101110 00101100 00100000 01001100 00101101 00110101 00110100 00110011 00110011 00101100 00100000 01001100 01110101 01111000 01100101 01101101 01100010 01101111 01110101 01110010 01100111 00001101 00001010 01100101 01101101 01100001 01101001 01101100 00111010 00100000 01110100 01100001 01101101 01011111 01100101 01110011 01100011 01100001 01101100 01100001 01101110 01110100 01100101 01000000 01111001 01100001 01101000 01101111 01101111 00101110 01100011 01101111 00101110 01110101 01101011<br></br></p>
   </div>
 </div>
-
-<script>
-$(document).ready(function(){
-  $("#btnDisplayTxt").click(function(){
-  $("#textHomeBinName").fadeIn(3000);
-  $("#textHomeBinTitle").fadeIn("slow");
-  $("#textHomeBinAddress").fadeIn("slow");
-  });
-});
-</script>
